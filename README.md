@@ -11,4 +11,4 @@ It Converts a subset of Boolean Formulae written in Verilog format to Z3Py accep
 Gabriele Tomassetti's [ANTLR Mega Tutorial](https://tomassetti.me/antlr-mega-tutorial/)
 
 ### Acknowledgement
-Thanks to [Stanly Samuel](https://github.com/stanlysamuel) for teaching me Visitor Design Patterns.
+Thanks to [Stanly Samuel](https://github.com/stanlysamuel) for teaching me Visitor Design Patterns and Clarifying doubts.
