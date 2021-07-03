@@ -1,7 +1,7 @@
 import os
 import antlr4
 import argparse
-from verilogToZ3.newVerilogVisitor import verilogVisitor
+from verilogToZ3.verilogVisitor import verilogVisitor
 from verilogToZ3.Verilog2001Lexer import Verilog2001Lexer
 from verilogToZ3.Verilog2001Parser import Verilog2001Parser
 
