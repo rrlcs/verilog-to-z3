@@ -12,6 +12,7 @@ Read Instructions on /https://github.com/antlr/antlr4 or follow Tomassetti's tut
 
 ## Test
 ```python verilog2z3.py --verilog_spec=lut1_2_2.v```
+Verilog benchmarks are in ```benchmarks/verilog``` 
 
 ## More Options
 ```python verilog2z3.py --help```
