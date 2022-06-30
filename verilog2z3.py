@@ -8,7 +8,7 @@ from verilogToZ3Py.Verilog2001Parser import Verilog2001Parser
 from verilogToZ3Py.verilogToZ3Visitor import verilogVisitor
 
 
-def preparez3(verilog_spec, verilog_spec_location, num_of_ouputs, manthan=0):
+def preparez3(verilog_spec, verilog_spec_location):
     '''
     Input: verilog file
     Output: z3py equivalent of verilog file
@@ -27,7 +27,7 @@ def preparez3(verilog_spec, verilog_spec_location, num_of_ouputs, manthan=0):
     parser = Verilog2001Parser(tokenStream)
     tree = parser.module_declaration()
     visitor = verilogVisitor(
-        verilog_spec, verilog_spec_location, num_of_ouputs)
+        verilog_spec, verilog_spec_location)
     z3filecontent = visitor.visit(tree)
     with open('verilogToZ3Py/templateZ3Checker.py', 'r') as file:
         filedata = file.read()
@@ -41,8 +41,7 @@ def preparez3(verilog_spec, verilog_spec_location, num_of_ouputs, manthan=0):
 if __name__ == "__main__":
 
     parser = argparse.ArgumentParser()
-    parser.add_argument("--spec", type=str)
+    parser.add_argument("--verilog_spec", type=str)
     args = parser.parse_args()
     path = 'benchmarks/verilog/'
-    preparez3('lut1_2_2.v',
-              path, 20)
+    preparez3(args.verilog_spec, path)

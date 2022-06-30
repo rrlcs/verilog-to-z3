@@ -11,13 +11,13 @@ Read Instructions on /https://github.com/antlr/antlr4 or follow Tomassetti's tut
 - Python 3
 
 ## Test
-```python main.py --spec=4```
+```python verilog2z3.py --verilog_spec=lut1_2_2.v```
 
 ## More Options
-```python main.py --help```
+```python verilog2z3.py --help```
 
 ### Resources
 Gabriele Tomassetti's [ANTLR Mega Tutorial](https://tomassetti.me/antlr-mega-tutorial/)
 
 ### Acknowledgement
-Thanks to [Stanly Samuel](https://github.com/stanlysamuel) for teaching me Visitor Design Patterns and Clarifying doubts.
+Thanks to [Stanly Samuel](https://github.com/stanlysamuel) for helping me learn Visitor Design Patterns and Clarifying doubts.

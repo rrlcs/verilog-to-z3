@@ -5,11 +5,10 @@ from verilogToZ3Py.Verilog2001Visitor import Verilog2001Visitor
 
 
 class verilogVisitor(Verilog2001Visitor):
-    def __init__(self, verilog_spec, verilog_spec_location, num_of_outputs) -> None:
+    def __init__(self, verilog_spec, verilog_spec_location) -> None:
         super(verilogVisitor, self).__init__()
         self.verilog_spec = verilog_spec
         self.verilog_spec_location = verilog_spec_location
-        self.num_of_outputs = num_of_outputs
         self.output_var = ""
 
     def visitModule_declaration(self, ctx: Verilog2001Parser.Module_declarationContext):
